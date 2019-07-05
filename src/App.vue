@@ -30,6 +30,7 @@ export default {
 }
 .right{
   position: absolute;
-  left: 300px;
+  left: 250px;
+  width: calc(100% - 250px);
 }
 </style>
