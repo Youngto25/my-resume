@@ -36,18 +36,21 @@
       </div>
     </div>
     <footer>
-      <div>
-        <span @click="openGithub">
-          <svg class="icon">
-            <use xlink:href="#icon-github"></use>
-          </svg>
-        </span>
-        <span @click="openJianshu">
-          <svg class="icon">
-            <use xlink:href="#icon-jianshu"></use>
-          </svg>
-        </span>
-      </div>
+      <span @click="openGithub">
+        <svg class="icon">
+          <use xlink:href="#icon-github"></use>
+        </svg>
+      </span>
+      <span @click="openCodepen">
+        <svg class="icon">
+          <use xlink:href="#icon-codepen"></use>
+        </svg>
+      </span>
+      <span @click="openJianshu">
+        <svg class="icon">
+          <use xlink:href="#icon-jianshu"></use>
+        </svg>
+      </span>
     </footer>
   </aside>
 </template>
@@ -59,6 +62,9 @@ export default {
   methods: {
     openGithub(){
       window.open('https://github.com/Youngto25')
+    },
+    openCodepen(){
+      window.open('https://codepen.io/youngto25/')
     },
     openJianshu(){
       window.open('https://www.jianshu.com/u/1c5fe5a330e2')
@@ -131,6 +137,8 @@ aside {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+    width: 200px;
+    text-align: center;
     span{
       height: 40px;
       width: 40px;
@@ -139,7 +147,7 @@ aside {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      &:first-child{
+      &:not(:last-child){
         margin-right: 10px;
       }
       &:hover{
