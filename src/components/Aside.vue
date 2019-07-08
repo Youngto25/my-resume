@@ -1,58 +1,62 @@
 <template>
-  <aside>
-    <header>Blake's Resume</header>
-    <div class="list">
-      <div>
-        <router-link :to="{name:'personal'}">
-          <span class="compainer">
-            <span class="chinese">关于</span>
-            <span class="english">About Me</span>
-          </span>
-        </router-link>
+<div id="box">   
+  <div id="float" class="div1">     
+    <aside>
+      <header>Blake's Resume</header>
+      <div class="list">
+        <div>
+          <router-link :to="{name:'personal'}">
+            <span class="compainer">
+              <span class="chinese">关于</span>
+              <span class="english">About Me</span>
+            </span>
+          </router-link>
+        </div>
+        <div>
+          <router-link :to="{name:'portfolio'}">
+            <span class="compainer">
+              <span class="chinese">项目</span>
+              <span class="english">portfolio</span>
+            </span>
+          </router-link>
+        </div>
+        <div>
+          <router-link :to="{name:'skill'}">
+            <span class="compainer">
+              <span class="chinese">技能</span>
+              <span class="english">Technical Station</span>
+            </span>
+          </router-link>
+        </div>
+        <div>
+          <router-link :to="{name:'contact'}">
+            <span class="compainer">
+              <span class="chinese">联系</span>
+              <span class="english">Contact</span>
+            </span>
+          </router-link>
+        </div>
       </div>
-      <div>
-        <router-link :to="{name:'portfolio'}">
-          <span class="compainer">
-            <span class="chinese">项目</span>
-            <span class="english">portfolio</span>
-          </span>
-        </router-link>
-      </div>
-      <div>
-        <router-link :to="{name:'skill'}">
-          <span class="compainer">
-            <span class="chinese">技能</span>
-            <span class="english">Technical Station</span>
-          </span>
-        </router-link>
-      </div>
-      <div>
-        <router-link :to="{name:'contact'}">
-          <span class="compainer">
-            <span class="chinese">联系</span>
-            <span class="english">Contact</span>
-          </span>
-        </router-link>
-      </div>
-    </div>
-    <footer>
-      <span @click="openGithub">
-        <svg class="icon">
-          <use xlink:href="#icon-github"></use>
-        </svg>
-      </span>
-      <span @click="openCodepen">
-        <svg class="icon">
-          <use xlink:href="#icon-codepen"></use>
-        </svg>
-      </span>
-      <span @click="openJianshu">
-        <svg class="icon">
-          <use xlink:href="#icon-jianshu"></use>
-        </svg>
-      </span>
-    </footer>
-  </aside>
+      <footer>
+        <span @click="openGithub">
+          <svg class="icon">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </span>
+        <span @click="openCodepen">
+          <svg class="icon">
+            <use xlink:href="#icon-codepen"></use>
+          </svg>
+        </span>
+        <span @click="openJianshu">
+          <svg class="icon">
+            <use xlink:href="#icon-jianshu"></use>
+          </svg>
+        </span>
+      </footer>
+    </aside>
+  </div>   
+</div> 
 </template>
 
 <script>
@@ -80,7 +84,7 @@ aside {
   width: 250px;
   height: 100vh;
   background: #2f3542;
-  position: relative;
+  position: fixed;
   .list {
     div {
       width: 250px;
@@ -134,8 +138,8 @@ aside {
   }
   footer{
     position: absolute;
-    bottom: 50px;
     left: 50%;
+    top: 850px;
     transform: translateX(-50%);
     width: 200px;
     text-align: center;
