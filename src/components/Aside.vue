@@ -2,11 +2,11 @@
 <div id="box">   
   <div id="float" class="div1">     
     <aside>
-      <header>Blake's Resume</header>
+      <header>Youngto's Resume</header>
       <div class="list">
         <div>
           <router-link :to="{name:'personal'}">
-            <span class="compainer">
+            <span class="compainer" @click.capture="addStyle">
               <span class="chinese">关于</span>
               <span class="english">About Me</span>
             </span>
@@ -14,7 +14,7 @@
         </div>
         <div>
           <router-link :to="{name:'portfolio'}">
-            <span class="compainer">
+            <span class="compainer" @click.capture="addStyle">
               <span class="chinese">项目</span>
               <span class="english">portfolio</span>
             </span>
@@ -22,7 +22,7 @@
         </div>
         <div>
           <router-link :to="{name:'skill'}">
-            <span class="compainer">
+            <span class="compainer" @click.capture="addStyle">
               <span class="chinese">技能</span>
               <span class="english">Technical Station</span>
             </span>
@@ -30,7 +30,7 @@
         </div>
         <div>
           <router-link :to="{name:'contact'}">
-            <span class="compainer">
+            <span class="compainer" @click.capture="addStyle">
               <span class="chinese">联系</span>
               <span class="english">Contact</span>
             </span>
@@ -72,6 +72,16 @@ export default {
     },
     openJianshu(){
       window.open('https://www.jianshu.com/u/1c5fe5a330e2')
+    },
+    addStyle(e){
+      this.$el.querySelectorAll('.compainer').forEach(item=>{
+        item.classList.remove('active')
+      })
+      if(e.target.classList.contains('compainer')){
+          e.target.classList.add('active')
+        }else{
+          e.target.parentNode.classList.add('active')
+      }
     }
   }
 };
@@ -95,6 +105,12 @@ aside {
         width: 250px;
         height: 44px;
         line-height: 44px;
+        &.active{
+          span{
+            color: #eccc68;
+            font-weight: 400;
+          }
+        }
         .chinese{
           color: #fff;
           display: inline-block;
