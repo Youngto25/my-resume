@@ -6,7 +6,7 @@
       <div class="list">
         <div>
           <router-link :to="{name:'personal'}">
-            <span class="compainer" @click.capture="addStyle">
+            <span class="compainer active" @click.capture="addStyle">
               <span class="chinese">关于</span>
               <span class="english">About Me</span>
             </span>

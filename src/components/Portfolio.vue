@@ -49,8 +49,8 @@ let items = [
   },
   {
     title: '导航',
-    src: ['navigator.jpg'],
-    describ: '一款极简的<span class="mark">导航网页</span>，支持搜索功能。26个字母对应26个网站，可以自行编辑每个字母所对应的网站，按下字母即可跳转到相应网站。使用 <span class="mark">localStorage</span> 本地保存相关网站信息，使用的搜索<span class="mark">接口为 Bing </span>搜索。',
+    src: ['nav.png'],
+    describ: '一款极简的<span class="mark">导航网页</span>，支持搜索功能。26个字母对应26个网站，可以自行编辑每个字母所对应的网站，按下字母即可跳转到相应网站。使用 <span class="mark">localStorage</span> 本地保存相关网站信息，可以切换搜索接口<span class="mark"> Bing Google </span>进行搜索。',
     useWhat: ['HTML5','ES6','Webpack','SCSS'],
     yuanma: 'https://github.com/Youngto25/nav-demo',
     liulan: 'https://youngto25.github.io/nav-demo/dist/index.html'

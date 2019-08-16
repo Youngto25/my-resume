@@ -10,6 +10,7 @@
         <li>专业：网络工程</li>
       </ul>
     </div>
+    <div class="download-button"><a href="../杨涛-前端工程师-2019.pdf" target="_blank" download>下载 PDF 简历</a></div>
   </div>
 </template>
 <script>
@@ -41,7 +42,7 @@ export default {
         width: 200px;
         text-align: center;
         font-size: 16px;
-        padding: 4px 0;
+        padding: 8px 0;
         &:first-child{
           font-size: 24px;
           span{
@@ -55,6 +56,25 @@ export default {
           padding-bottom: 8px;
         }
       }
+    }
+  }
+  .download-button{
+    cursor: pointer;
+    margin-top: 50px;
+    background: #f1f2f6;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    a{
+      font-weight: 600px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 50px;
+      color: #000000;
+    }
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
     }
   }
 }
