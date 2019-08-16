@@ -39,20 +39,45 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media screen and (max-width: 999px){
+  .wrapper{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    footer{
+      position: absolute;
+      top: 0;
+      margin-top: 100px;
+    }
+    main{
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .wrapper{
+    width: calc(100% - 250px);
+    height: 100vh;
+    footer{
+      margin-top: 50px;
+    }
+    main{
+      margin-top: 60px;
+    }
+  }
+}
+
 .wrapper{
-  width: calc(100% - 250px);
-  height: 100vh;
   background: #f1f2f6;
   display: flex;
   flex-direction: column;
   align-items: center;
   footer{
       font-size: 40px;
-      margin-top: 50px;
   }
   main{
     width: 80%;
-    margin-top: 60px;
     .content{
       background: #ffffff;
       padding: 8px;

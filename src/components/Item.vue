@@ -55,17 +55,38 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media screen and (max-width: 999px){
+  .box{
+    width: 98vw;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .box{
+    width: 700px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    .content-wrapper{
+      .img-wrapper{
+        img{
+          padding: 0 2px;
+        }
+      }
+    }
+  }
+}
+
 .box{
-  width: 700px;
   background: #ffffff;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   .content-wrapper{
-    width: 96%;
+    width: 94%;
     h2{
       padding: 4px 0;
       font-size: 16px;
@@ -75,7 +96,6 @@ export default {
       display: flex;
       width: 100%;
       img{
-        padding: 0 2px;
         &:hover{
           cursor: pointer;
         }

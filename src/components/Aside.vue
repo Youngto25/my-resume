@@ -89,6 +89,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@media screen and (max-width: 999px){
+  aside{
+    opacity: 0.9;
+  }
+}
 aside {
   font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
   width: 250px;

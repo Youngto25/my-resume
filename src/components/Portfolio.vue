@@ -88,10 +88,12 @@ export default {
   mounted(){
     document.addEventListener('scroll',()=>{
       this.show = false
+      this.$eventBus.$emit('scrollPage')
     })
   },
   methods: {
     open(x){
+      if(this.$eventBus.width<1000) return
       this.src =  x
       this.show = true
       this.$nextTick(function(){
@@ -109,8 +111,25 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media screen and (max-width: 999px){
+  .wrapper{
+    width: 100%;
+    footer{
+      margin-top: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .wrapper{
+    width: calc(100% - 250px);
+    footer{
+      margin-top: 50px;
+    }
+  }
+}
+
 .wrapper{
-  width: calc(100% - 250px);
   .content{
     background: #f1f2f6;
     display: flex;
@@ -118,7 +137,6 @@ export default {
     align-items: center;
     footer{
       font-size: 40px;
-      margin-top: 50px;
     }
   }
   .more{

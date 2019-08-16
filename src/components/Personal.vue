@@ -19,16 +19,39 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@media screen and (max-width: 999px){
+  .wrapper{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    .touxiang{
+      position: absolute;
+      top: 0;
+      margin-top: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .wrapper{
+    width: calc(100% - 250px);
+    height: 100vh;
+    .touxiang{
+      margin-top: 50px;
+    }
+    .message{
+      margin-top: 160px;
+    }
+  }
+}
+
 .wrapper{
-  width: calc(100% - 250px);
-  height: 100vh;
   background: #f1f2f6;
   display: flex;
   flex-direction: column;
   align-items: center;
   .touxiang{
     font-size: 40px;
-    margin-top: 50px;
   }
   .message{
     background: #ffffff;
@@ -36,7 +59,6 @@ export default {
     width: 70%;
     display:flex;
     justify-content: center;
-    margin-top: 160px;
     ul{
       li{
         width: 200px;
