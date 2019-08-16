@@ -21,6 +21,7 @@ export default {
   },
   mounted(){
     this.$eventBus.$on('scrollPage',()=>{
+      if(this.$eventBus.width>1000) return
       this.x()
     })
   },
