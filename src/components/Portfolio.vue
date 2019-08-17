@@ -40,9 +40,9 @@ let items = [
     yuanma: 'https://github.com/Youngto25/love-animation'
   },
   {
-    title: '仿 QQ 音乐',
-    src: ['QQFirstPage.jpg','QQRankPage.jpg','QQSearchPage.jpg','QQPlayPage.jpg','QQLyricsPage.jpg'],
-    describ: '一款仿制QQ 音乐的<span class="mark">音乐播放器</span>，集音乐推荐、音乐排行、音乐搜索及播放于一体。使用 express require require-promise cors 来<span class="mark">伪造请求</span>获得数据，使用<span class="mark">懒加载</span>来加载图片，使用<span class="mark">节流</span>监听搜索框输入，使用 <span class="mark">audio API</span>实现播放，使用<span class="mark">手势库</span>监测页面的滑动情况，使用<span class="mark">webpack</span>对代码进行打包。',
+    title: 'Young music',
+    src: ['FirstPage.png','RankPage.png','SearchPage.png','PlayPage.png','LyricsPage.png'],
+    describ: '一款自制的<span class="mark">音乐播放器</span>，集音乐推荐、音乐排行、音乐搜索及播放于一体。使用 express require require-promise cors 来<span class="mark">伪造请求</span>获得数据，使用<span class="mark">懒加载</span>来加载图片，使用<span class="mark">防抖</span>技术优化搜索框输入，使用 <span class="mark">audio API</span>实现播放，使用<span class="mark">手势库</span>监测页面的滑动情况，使用<span class="mark">webpack</span>对代码进行打包。',
     useWhat: ['HTML5','ES6','Webpack','SCSS','Express','require','cors'],
     yuanma: 'https://github.com/Youngto25/QQ-Music',
     liulan: 'https://youngto25.github.io/QQ-Music/dist/index.html'
