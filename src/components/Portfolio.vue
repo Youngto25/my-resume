@@ -116,6 +116,7 @@ export default {
     width: 100%;
     footer{
       margin-top: 100px;
+      font-size: 24px;
     }
   }
 }
@@ -125,6 +126,7 @@ export default {
     width: calc(100% - 250px);
     footer{
       margin-top: 50px;
+      font-size: 40px;
     }
   }
 }
@@ -136,7 +138,6 @@ export default {
     flex-direction: column;
     align-items: center;
     footer{
-      font-size: 40px;
     }
   }
   .more{

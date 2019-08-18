@@ -35,6 +35,7 @@ export default {
       position: absolute;
       top: 0;
       margin-top: 100px;
+      font-size: 24px;
     }
     main{
       width: 70%;
@@ -48,6 +49,7 @@ export default {
     height: 100vh;
     footer{
       margin-top: 50px;
+      font-size: 40px;
     }
     main{
       margin-top: 200px;
@@ -62,7 +64,6 @@ export default {
   flex-direction: column;
   align-items: center;
   footer{
-    font-size: 40px;
   }
   main{
     display: flex;

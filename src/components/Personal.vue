@@ -28,6 +28,7 @@ export default {
       position: absolute;
       top: 0;
       margin-top: 100px;
+      font-size: 24px;
     }
   }
 }
@@ -38,6 +39,7 @@ export default {
     height: 100vh;
     .touxiang{
       margin-top: 50px;
+      font-size: 40px;
     }
     .message{
       margin-top: 160px;
@@ -51,7 +53,6 @@ export default {
   flex-direction: column;
   align-items: center;
   .touxiang{
-    font-size: 40px;
   }
   .message{
     background: #ffffff;
