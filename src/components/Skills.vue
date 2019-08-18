@@ -52,6 +52,15 @@ export default {
     }
     main{
       margin-top: 70px;
+      width: 96%;
+      ul{
+        li{
+          margin-bottom: 4px;
+          p{
+            margin-top: 2px;
+          }
+        }
+      }
     }
   }
 }
@@ -66,6 +75,15 @@ export default {
     }
     main{
       margin-top: 60px;
+      width: 80%;
+      ul{
+        li{
+          margin-bottom: 12px;
+          p{
+            margin-top: 4px;
+          }
+        }
+      }
     }
   }
 }
@@ -78,14 +96,12 @@ export default {
   footer{
   }
   main{
-    width: 80%;
     .content{
       background: #ffffff;
       padding: 8px;
       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
       ul{
         li{
-          margin-bottom: 12px;
           h3{
             display: inline-flex;
             align-items: center;
@@ -101,7 +117,6 @@ export default {
             }
           }
           p{
-            margin-top: 4px;
             font-size: 14px;
             color: #4E4E4E;
           }

@@ -94,6 +94,13 @@ export default {
     opacity: 0.9;
   }
 }
+
+@media screen and (min-width: 1000px){
+  aside{
+    height: 100vh;
+  }
+}
+
 aside {
   font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
   width: 250px;
@@ -160,7 +167,8 @@ aside {
   footer{
     position: absolute;
     left: 50%;
-    top: 850px;
+    bottom: 0;
+    margin-bottom: 20px;
     transform: translateX(-50%);
     width: 200px;
     text-align: center;
