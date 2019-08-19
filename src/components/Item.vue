@@ -60,6 +60,13 @@ export default {
     width: 98vw;
     margin: 10px 0;
     overflow: hidden;
+    .content-wrapper{
+      .img-wrapper{
+        img{
+          //max-height: 40vw;
+        }
+      }
+    }
   }
 }
 
@@ -73,6 +80,7 @@ export default {
       .img-wrapper{
         img{
           padding: 0 2px;
+          //height: auto;
         }
       }
     }
