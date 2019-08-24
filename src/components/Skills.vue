@@ -5,16 +5,16 @@
       <div class="content">
         <ul>
           <li>
+            <h3><span></span>HTML5 & CSS3 & ES6</h3>
+            <p>熟悉 HTML5 及语义化，了解 Canvas 动画制作，掌握 CSS3 动画、过渡效果等常用技术，熟悉原生 JavaScript，会使用 ES6+ 常用规范。</p>
+          </li>
+          <li>
             <h3><span></span>Vue</h3>
-            <p> 熟悉Vue常用功能，如组件、生命周期、双向绑定、Vue-router、Vuex ，熟练使用脚手架工具 Vue CLI。</p>
+            <p>熟悉 Vue 常用功能，理解如生命周期、组件、虚拟 DOM、数据响应式等概念，能够使用 Vue 全家桶开发项目，对 React 有一定了解。</p>
           </li>
           <li>
             <h3><span></span>小程序制作</h3>
-            <p>可以独立进行小程序开发，熟悉 WXML WXSS JS 相关 API 及组件的使用。</p>
-          </li>
-          <li>
-            <h3><span></span>HTML5 & CSS3 & ES6</h3>
-            <p>熟悉 HTML5 及语义化，了解 Canvas 动画制作，掌握 CSS3 动画、过渡效果等常用技术，熟悉原生 JavaScript，会使用 ES6+ 常用规范。</p>
+            <p>可以独立进行小程序开发，熟悉 WXML WXSS JS 及相关 API 、组件的使用。</p>
           </li>
           <li>
             <h3><span></span>HTTP</h3>
@@ -22,7 +22,7 @@
           </li>
           <li>
             <h3><span></span>移动端页面</h3>
-            <p>会使用 REM、vw/vh、响应式等技术制作适配手机设备的页面。</p>
+            <p>有移动端开发经验，会使用 REM、vw/vh、响应式等技术制作适配手机设备的页面。</p>
           </li>
           <li>
             <h3><span></span>打包工具</h3>

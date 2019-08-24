@@ -10,7 +10,7 @@
         <li>专业：网络工程</li>
       </ul>
     </div>
-    <div class="download-button"><a href="./杨涛-前端工程师-2019.pdf" target="_blank" download>下载 PDF 简历</a></div>
+    <div class="download-button"><a href="./YangTao-FrontEnd-2019.pdf" target="_blank" download>下载 PDF 简历</a></div>
   </div>
 </template>
 <script>
