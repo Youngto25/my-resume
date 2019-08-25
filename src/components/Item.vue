@@ -3,7 +3,7 @@
     <div class="content-wrapper">
       <h2>{{ item.title }}</h2>
       <div class="img-wrapper">
-        <img v-for="(good,index) in src" :src="good" alt="" @click="bigImg" ref="img" :key="index">
+        <img v-for="(good,index) in src" :src="good" alt="#" @click="bigImg" ref="img" :key="index">
       </div>
       <div class="describ">
         <p>项目介绍：<span v-html="item.describ"></span></p>
@@ -63,7 +63,7 @@ export default {
     .content-wrapper{
       .img-wrapper{
         img{
-          //max-height: 40vw;
+          max-height: 40vw;
         }
       }
     }
@@ -80,6 +80,7 @@ export default {
       .img-wrapper{
         img{
           padding: 0 2px;
+          max-height: 300px;
           //height: auto;
         }
       }

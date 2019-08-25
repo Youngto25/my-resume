@@ -15,7 +15,6 @@
 </template>
 <script>
 import Card from './Item'
-
 let items = [
   {
     title: 'lengzi',
@@ -108,7 +107,7 @@ export default {
               this.$el.querySelectorAll('.imgs-wrapper img').forEach((el)=>{
                 el.style.width = `${100 / x.length}%`
               })
-        let offsetTop = document.documentElement.scrollTop
+        let offsetTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
         this.$el.querySelector('.more').style.top = offsetTop + 'px'
       })
     },

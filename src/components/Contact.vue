@@ -40,6 +40,14 @@ export default {
     main{
       width: 70%;
     }
+    div{
+      width: 100%;
+      .icon{
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+      }
+    }
   }
 }
 
@@ -54,6 +62,14 @@ export default {
     main{
       margin-top: 200px;
       width: 60%;
+    }
+    div{
+      width: 40%;
+      .icon{
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+      }
     }
   }
 }
@@ -73,16 +89,9 @@ export default {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
     padding: 8px;
     div{
-      width: 40%;
       display: flex;
       align-items: center;
-      justify-content: center;
-      .icon{
-        height: 40px;
-        width: 40px;
-        padding: 4px;
-      }
-      
+      justify-content: center; 
     }
   }
 }
